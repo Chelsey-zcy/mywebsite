@@ -12,51 +12,95 @@
   <script src="behavior.js"></script>
 </head>
 
-<body>
-  <a href="https://apply.holbertonschool.com" target="_blank">
-    <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton School Logo" width="200">
-  </a>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#why">Why</a></li>
-      </ul>
-    </nav>
+<body class="works_on_smartphone">
+  <header class="navbar">
+    <div class="navbar-container">
+      <div>
+        <a href="https://apply.holbertonschool.com" target="_blank">
+          <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton School Logo" width="200">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="tweets.html">Tweets</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About Me</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <h1>Hey, I'm Chelsey!</h1>
+  <main>
+    <article>
+      <div class="hero-section">
+        <img src="images/profile.jpg" id="smart_thumbnail" class="small">
+        <h2>Hey, I'm Chelsey!</h2>
+      </div>
+
+      <p>As a self-taught software engineer with a deep passion for technology, I am constantly striving to expand my
+        knowledge and push the boundaries of what I can achieve in the field of software development and artificial
+        intelligence. My journey into tech has been fueled by curiosity, perseverance, and a strong desire to create
+        meaningful and innovative solutions that have a real impact on the world.</p>
+
+      <p>One of my biggest motivations for joining the DevelopHer Program is to refine and advance my coding skills.
+        While
+        I have built a strong foundation in software development through self-learning, professional experience, and
+        independent projects, I recognize the importance of structured guidance and mentorship to take my expertise to
+        the
+        next level. The opportunity to learn from industry professionals, collaborate with like-minded peers, and
+        receive
+        hands-on support will help me build confidence in tackling more complex projects and challenges.</p>
+
+      <p>I strongly believe in the power of continuous learning. Technology evolves rapidly, and staying ahead requires
+        an
+        ongoing commitment to education and skill enhancement. Through the DevelopHer Program, I aim to deepen my
+        understanding of computer science fundamentals, artificial intelligence, cloud computing, and full-stack
+        development. Gaining exposure to new technologies, tools, and best practices will empower me to become a more
+        well-rounded and capable engineer.</p>
+
+      <p>Beyond technical growth, I seek guidance in navigating my career path. Transitioning into the tech industry as
+        a
+        self-taught developer has been an incredible journey, but it has also come with challenges, particularly in
+        accessing advanced career opportunities. The DevelopHer Program offers a supportive environment where I can
+        receive mentorship, career advice, and networking opportunities that will help me break into more advanced roles
+        and contribute to impactful projects. Learning from experienced professionals will provide valuable insights
+        into
+        industry trends, job market expectations, and strategies to position myself for long-term success in the field.
+      </p>
+
+      <p>In conclusion, the DevelopHer Program represents an incredible opportunity for me to refine my technical
+        skills,
+        seek mentorship, collaborate on challenging projects, and position myself for advanced career opportunities. I
+        am
+        eager to grow as a software engineer, contribute to the tech industry, and ultimately use my knowledge and
+        skills
+        to create meaningful technological solutions. I am excited about the journey ahead and look forward to the
+        possibilities that this program will unlock for my career and personal development.</p>
 
 
-  <section id="mission">
-    <h2>Personal Mission</h2>
-    <p>As a self-taught software engineer with a passion for technology, my mission is to continuously grow and expand
-      my skills in AI and software development. I aim to create innovative solutions that have a meaningful impact on
-      the
-      world.</p>
-    <h2>Commitment to Lifelong Learning</h2>
-    <p>I believe in the power of continuous learning. Whether through formal education, hands-on projects, or
-      self-directed study, I am dedicated to deepening my understanding of computer science, artificial intelligence,
-      and
-      cutting-edge technologies.</p>
-  </section>
-  <section id="goals">
-    <h2>Building Solutions for Real-World Problems</h2>
-    <h3>Innovating with Purpose</h3>
-    <p>Technology has the power to transform lives. My goal is to develop AI-driven solutions, smart hardware, and AIoT
-      devices that improve efficiency, enhance productivity, and contribute to a better future.</p>
+    </article>
+    <aside>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = window.location.pathname;
+        };
 
-    <h2>Empowering and Inspiring Others</h2>
-    <p>Beyond personal growth, I am committed to mentoring and supporting others who are transitioning into tech. By
-      sharing knowledge and experiences, I hope to encourage more women and self-taught developers to pursue careers in
-      technology.</p>
-  </section>
-
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://chelseyzhang.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+    </aside>
+  </main>
   <footer class="footer">
     <div class="copyright">
-      2025 ©
-      <a href="/">Chelsey Zhang</a>.
+      2025 © Made by Chelsey Zhang for
+      <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>
     </div>
     <div class="top" title="Top">
       <ion-icon name="chevron-up"></ion-icon>

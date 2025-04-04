@@ -11,31 +11,74 @@
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
-<body>
-  <p><a href="index.html">Back to Homepage</a></p>
-  <h1>My Embedded Tweet</h1>
-  <p>Here is a tweet that reflects my passion for lifelong learning and AI development:</p>
+<body class="works_on_smartphone">
+  <header class="navbar">
+    <div class="navbar-container">
+      <div>
+        <a href="https://apply.holbertonschool.com" target="_blank">
+          <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton School Logo" width="200">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="tweets.html">Tweets</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+      <div>
+        <a href="index.html" class="back-button">Back to Home</a>
+      </div>
+      <div>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">"AI is evolving rapidly! Which area of AI excites you the most? 🤖✨"<br>💬 Comment
+            your
+            thoughts! Where do you see AI making the biggest impact? 🚀
+            <a href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw">#AI</a>
+            <a href="https://twitter.com/hashtag/MachineLearning?src=hash&amp;ref_src=twsrc%5Etfw">#MachineLearning</a>
+            <a href="https://twitter.com/hashtag/TechPoll?src=hash&amp;ref_src=twsrc%5Etfw">#TechPoll</a>
+          </p>&mdash; Chunyan Zhang (@ChunyanZhang7) <a
+            href="https://twitter.com/ChunyanZhang7/status/1905432918895591597?ref_src=twsrc%5Etfw">March 28, 2025</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">I'm on a journey to break into tech, fueled by a passion for solving real-world
+            problems
+            with
+            technology. From web development to AI, I'm constantly learning, building, and exploring new ways to make
+            a
+            difference. Excited for what's ahead!</p>&mdash; Chunyan Zhang (@ChunyanZhang7)
+          <a href="https://twitter.com/ChunyanZhang7/status/1905432026146373718?ref_src=twsrc%5Etfw">March 28,
+            2025</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </article>
+    <aside>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = window.location.pathname;
+        };
 
-  <blockquote class="twitter-tweet">
-    <p lang="en" dir="ltr">“AI is evolving rapidly! Which area of AI excites you the most? 🤖✨”<br>💬 Comment your
-      thoughts! Where do you see AI making the biggest impact? 🚀
-      <a href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw">#AI</a>
-      <a href="https://twitter.com/hashtag/MachineLearning?src=hash&amp;ref_src=twsrc%5Etfw">#MachineLearning</a>
-      <a href="https://twitter.com/hashtag/TechPoll?src=hash&amp;ref_src=twsrc%5Etfw">#TechPoll</a>
-    </p>&mdash; Chunyan Zhang (@ChunyanZhang7) <a
-      href="https://twitter.com/ChunyanZhang7/status/1905432918895591597?ref_src=twsrc%5Etfw">March 28, 2025</a>
-  </blockquote>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  <blockquote class="twitter-tweet">
-    <p lang="en" dir="ltr">I’m on a journey to break into tech, fueled by a passion for solving real-world problems with
-      technology. From web development to AI, I’m constantly learning, building, and exploring new ways to make a
-      difference. Excited for what’s ahead!</p>&mdash; Chunyan Zhang (@ChunyanZhang7)
-    <a href="https://twitter.com/ChunyanZhang7/status/1905432026146373718?ref_src=twsrc%5Etfw">March 28, 2025</a>
-  </blockquote>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://chelseyzhang.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+    </aside>
+  </main>
 </body>
 
 </html>
