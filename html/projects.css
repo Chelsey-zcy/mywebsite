@@ -1,16 +1,9 @@
-/* .hero {
+.hero {
   text-align: center;
   padding: 10px 20px;
   background: linear-gradient(to right, #f3f4f6, #e5e7eb);
   margin-bottom: 15px;
-} */
-
-/* .hero .subtitle {
-  font-size: 20px;
-  color: #323741;
-  max-width: 600px;
-  margin: 0 auto;
-} */
+}
 
 .projects-grid {
   display: grid;
