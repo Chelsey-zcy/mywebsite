@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+  <title>
+    My Projects
+  </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Tweets</title>
   <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <script src="behavior.js"></script>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link href="projects.css" rel="stylesheet">
 </head>
 
 <body class="works_on_smartphone">
@@ -44,32 +45,57 @@
       <div>
         <a href="index.html" class="back-button">Back to Home</a>
       </div>
-      <div>
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">"AI is evolving rapidly! Which area of AI excites you the most? 🤖✨"<br>💬 Comment
-            your
-            thoughts! Where do you see AI making the biggest impact? 🚀
-            <a href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw">#AI</a>
-            <a href="https://twitter.com/hashtag/MachineLearning?src=hash&amp;ref_src=twsrc%5Etfw">#MachineLearning</a>
-            <a href="https://twitter.com/hashtag/TechPoll?src=hash&amp;ref_src=twsrc%5Etfw">#TechPoll</a>
-          </p>&mdash; Chunyan Zhang (@ChunyanZhang7) <a
-            href="https://twitter.com/ChunyanZhang7/status/1905432918895591597?ref_src=twsrc%5Etfw">March 28, 2025</a>
-        </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      <div>
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">I'm on a journey to break into tech, fueled by a passion for solving real-world
-            problems
-            with
-            technology. From web development to AI, I'm constantly learning, building, and exploring new ways to make
-            a
-            difference. Excited for what's ahead!</p>&mdash; Chunyan Zhang (@ChunyanZhang7)
-          <a href="https://twitter.com/ChunyanZhang7/status/1905432026146373718?ref_src=twsrc%5Etfw">March 28,
-            2025</a>
-        </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
+      <section class="hero">
+        <h2>My Projects</h2>
+        <p class="subtitle">A showcase of my journey in software development</p>
+      </section>
+
+      <section id="projects" class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Task Management</h3>
+            <p>A serverless task management system built with AWS services:</p>
+            <ul class="tech-stack">
+              <li>AWS CloudFormation</li>
+              <li>API Gateway</li>
+              <li>AWS Lambda</li>
+            </ul>
+            <p>Features:</p>
+            <ul>
+              <li>Automated infrastructure provisioning</li>
+              <li>CRUD operations for task management</li>
+              <li>Serverless architecture</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Chelsey-zcy/task-management" class="github-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Dev-Connector</h3>
+            <p>A social network platform for developers built with the MERN stack:</p>
+            <ul class="tech-stack">
+              <li>MongoDB</li>
+              <li>Express.js</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+            <p>Features:</p>
+            <ul>
+              <li>User profiles with education and job experience</li>
+              <li>Social networking capabilities</li>
+              <li>Full-stack development</li>
+            </ul>
+            <a href="https://github.com/Chelsey-zcy/full-stack-social-network-app" class="github-link" target="_blank">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
     </article>
     <aside>
       <div id="disqus_thread"></div>
@@ -90,6 +116,15 @@
           Disqus.</a></noscript>
     </aside>
   </main>
+  <footer class="footer">
+    <div class="copyright">
+      2025 © Made by Chelsey Zhang for
+      <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>
+    </div>
+    <div class="top" title="Top">
+      <ion-icon name="chevron-up"></ion-icon>
+    </div>
+  </footer>
 </body>
 
 </html>

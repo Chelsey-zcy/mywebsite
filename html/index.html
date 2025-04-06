@@ -3,7 +3,7 @@
 
 <head>
   <title>
-    Chelsey Zhang
+    Chelsey Zhang's Portfolio
   </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,9 @@
 </head>
 
 <body class="works_on_smartphone">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
   <header class="navbar">
     <div class="navbar-container">
       <div>
@@ -21,11 +24,20 @@
         </a>
       </div>
       <nav>
+
         <ul>
           <li><a href="tweets.html">Tweets</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/about">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Me</a></li>
         </ul>
+        <div class="right">
+          <div class="fb-share-button" data-href=window.location.href data-layout="" data-size=""><a target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F35.181.63.107%2Findex.html&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore">Share</a></div>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+            data-show-count="false">Tweet</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </nav>
     </div>
   </header>
