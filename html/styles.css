@@ -163,21 +163,14 @@ aside {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 836px) {
-  .logo {
-    display: none;
-  }
-
-  .navbar {
-    padding: 12px;
-    margin-top: 16px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .navbar {
     padding: 16px;
     margin-top: 32px;
+  }
+
+  .navbar-container > div:first-child {
+    display: none;
   }
 
   main {
