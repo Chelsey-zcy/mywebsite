@@ -1,15 +1,29 @@
+.hero {
+  text-align: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+  margin-bottom: 15px;
+}
+
 .content-section {
   max-width: 1200px;
   margin: 16px auto;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .section-title {
   font-size: 28px;
   font-weight: 700;
   color: #111827;
-  margin: 0 0 24px 0;
   border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 12px;
+  padding: 10px 0;
+}
+
+.section-title h2 {
+  margin: 15px 0;
 }
 
 .experience-list,
@@ -21,17 +35,20 @@
 
 .experience-item,
 .education-item {
-  padding: 16px 0;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .experience-item:last-child,
 .education-item:last-child {
   border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 h4 {
-  margin: 0 0 8px 0;
+  margin: 0 0 0px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +64,7 @@ h4 {
 .tags {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 16px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -59,21 +76,6 @@ h4 {
   border-radius: 9999px;
   font-size: 14px;
   color: #4b5563;
-}
-
-.education-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.education-item {
-  /* padding: 16px 0; */
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.education-item:last-child {
-  border-bottom: none;
 }
 
 .education-header {
