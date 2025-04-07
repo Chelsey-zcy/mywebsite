@@ -162,6 +162,11 @@ aside {
   padding-bottom: 10px;
   margin-right: 16px;
 }
+.tweets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 @media screen and (max-width: 768px) {
   main {
@@ -176,7 +181,7 @@ aside {
   }
 
   .twitter-tweet {
-    margin-left: 16px;
+    margin: 0 auto !important;
     width: 100% !important;
   }
 
@@ -202,6 +207,6 @@ aside {
     text-align: center;
   }
   .twitter-tweet {
-    width: 60% !important;
+    width: 100% !important;
   }
 }
