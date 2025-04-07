@@ -1,7 +1,7 @@
 body {
   flex-direction: column;
   display: flex;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #374151;
   line-height: 1.5;
 }
@@ -115,6 +115,8 @@ aside {
 
 .twitter-tweet {
   margin-left: 60px;
+  max-width: 100% !important;
+  margin: var(--spacing-md) auto !important;
 }
 
 .footer {
@@ -129,7 +131,7 @@ aside {
 .back-button {
   display: inline-flex;
   align-items: center;
-  padding: 12px 24px;
+  padding: 12px 0;
   color: #374151;
   text-decoration: none;
 }
@@ -161,9 +163,20 @@ aside {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 836px) {
+  .logo {
+    display: none;
+  }
+
   .navbar {
     padding: 12px;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 16px;
     margin-top: 32px;
   }
 
@@ -216,6 +229,7 @@ aside {
 }
 
 .twitter-tweet {
+  margin-left: 60px;
   max-width: 100% !important;
   margin: 16px auto !important;
 }

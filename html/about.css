@@ -2,7 +2,7 @@
   text-align: center;
   padding: 10px 20px;
   background: linear-gradient(to right, #f3f4f6, #e5e7eb);
-  margin-bottom: 15px;
+  margin: 16px 0;
 }
 
 .content-section {
@@ -50,12 +50,18 @@ h4 {
   font-weight: 600;
   font-size: 18px;
   color: #111827;
+  margin: 8px 0;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container p {
+  margin: 8px 0;
+  color: #6b7280;
 }
 
 .tags {
@@ -115,6 +121,10 @@ h4 {
     align-items: flex-start;
   }
 
+  .container p {
+    font-size: 14px;
+  }
+
   .education-header {
     flex-direction: column;
     align-items: flex-start;
@@ -134,16 +144,12 @@ h4 {
     font-size: 16px;
   }
 
-  .container p {
-    font-size: 14px;
-  }
-
   .tags li {
     font-size: 12px;
     padding: 4px 8px;
   }
 
-  .education-header h6 .education-header p {
+  .education-header h6 .education-header p .container p {
     font-size: 14px;
   }
 

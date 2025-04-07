@@ -2,7 +2,7 @@
   text-align: center;
   padding: 20px;
   background: linear-gradient(to right, #f3f4f6, #e5e7eb);
-  margin-bottom: 20px;
+  margin: 16px 0;
 }
 
 .hero h3 {
@@ -72,6 +72,7 @@
   border-radius: 9999px;
   font-size: clamp(12px, 2.5vw, 14px);
   color: #4b5563;
+  list-style: none;
 }
 
 .project-content ul {
