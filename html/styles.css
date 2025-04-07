@@ -4,15 +4,6 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #374151;
   line-height: 1.5;
-  margin: 0;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 0 16px 0;
-  color: #4b5563;
-  line-height: 1.6;
 }
 
 .navbar {
@@ -39,6 +30,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -130,6 +122,8 @@ aside {
   padding: 32px;
   text-align: center;
   color: #6b7280;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .back-button {
@@ -155,6 +149,7 @@ aside {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .twitter-share-button {
@@ -164,4 +159,63 @@ aside {
 
 .fb-share-button {
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 12px;
+    margin-top: 32px;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+
+  article,
+  aside {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .twitter-tweet {
+    margin-left: 0;
+    width: 100% !important;
+  }
+
+  .back-button {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+
+  .navbar {
+    padding: 12px;
+    margin-top: 32px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.twitter-tweet {
+  max-width: 100% !important;
+  margin: 16px auto !important;
 }

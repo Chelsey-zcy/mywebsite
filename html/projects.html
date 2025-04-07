@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>
@@ -10,6 +10,8 @@
   <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <link href="projects.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body class="works_on_smartphone">
@@ -18,16 +20,17 @@
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
   <header class="navbar">
     <div class="navbar-container">
-      <div>
+      <div class="logo">
         <a href="https://apply.holbertonschool.com" target="_blank">
-          <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton School Logo" width="200">
+          <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton School Logo" width="200"
+            height="auto">
         </a>
       </div>
       <nav>
         <ul>
           <li><a href="tweets.html">Tweets</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
         <div class="right">
           <div class="fb-share-button" data-href=window.location.href data-layout="" data-size=""><a target="_blank"
@@ -42,12 +45,12 @@
   </header>
   <main>
     <article>
-      <div>
+      <div class="back-container">
         <a href="index.html" class="back-button">Back to Home</a>
       </div>
       <section class="hero">
         <h3>My Personal Projects</h3>
-        <p>A showcase of my self-learning journey in software developments.</p>
+        <p>A showcase of my self-learning journey in software development.</p>
       </section>
 
       <section id="projects" class="projects-grid">
@@ -67,8 +70,10 @@
               <li>Serverless architecture</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/Chelsey-zcy/task-management" class="github-link" target="_blank">
-                <ion-icon name="logo-github"></ion-icon> View on GitHub
+              <a href="https://github.com/Chelsey-zcy/task-management" class="github-link" target="_blank"
+                rel="noopener noreferrer">
+                <ion-icon name="logo-github"></ion-icon>
+                <span>View on GitHub</span>
               </a>
             </div>
           </div>
@@ -90,9 +95,13 @@
               <li>Social networking capabilities</li>
               <li>Full-stack development</li>
             </ul>
-            <a href="https://github.com/Chelsey-zcy/full-stack-social-network-app" class="github-link" target="_blank">
-              View on GitHub
-            </a>
+            <div class="project-links">
+              <a href="https://github.com/Chelsey-zcy/full-stack-social-network-app" class="github-link" target="_blank"
+                rel="noopener noreferrer">
+                <ion-icon name="logo-github"></ion-icon>
+                <span>View on GitHub</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -119,10 +128,7 @@
   <footer class="footer">
     <div class="copyright">
       2025 © Made by Chelsey Zhang for
-      <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>
-    </div>
-    <div class="top" title="Top">
-      <ion-icon name="chevron-up"></ion-icon>
+      <a href="https://apply.holbertonschool.com" target="_blank" rel="noopener noreferrer">Holberton School</a>
     </div>
   </footer>
 </body>
